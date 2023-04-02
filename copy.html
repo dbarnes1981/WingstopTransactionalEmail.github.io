@@ -15,23 +15,33 @@
             body { background-color: #222D33; margin: 0px; padding: 0px; font-family: 'Roboto',
             Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; color: #262626; }
 
-            @media only screen and (min-width:100px) and (max-width:600px) {
+            @media only screen and (min-width:350px) and (max-width:500px) {
 	            .button-size { width:390px!important;padding:10px!important;font-size:0.9rem!important;}
                 .third-btn { width:460!important;}
+                .fc { font-size: 1.3rem!important; }
+            }
+
+            @media only screen and (min-width:100px) and (max-width:350px) {
+	            .button-size { width:390px!important;padding:10px!important;font-size:0.9rem!important;}
+                .third-btn { width:460!important;}
+                .fc { font-size: 1rem!important; }
             }
 
             @media only screen and (max-width:600px) {
                 .responsive-table { width:100%!important;}
                 .image {max-width:100%!important; height:auto!important;}
-                .container { width:435px!important;}
+                .container { width:555px!important;}
+                .ct { width:200px!important; }
                 .db { display:block!important;}
                 .dw { width:100%!important; min-width:100%!important; max-width:100%!important; }
-                .resize { max-width:200px!important; }
+                .icon { width:35px!important; }
                 .fs { font-size:0.9rem!important; }
                 .ft { font-size:0.7rem!important; }
-                .fc { font-size: 1.5rem!important; }
+                .pd { padding:0px 10px!important; }
                 .ac { text-align:center!important;}
                 .bs { width:100%!important;font-size:0.8rem!important; }
+                .pl { padding-left:10px!important;}
+                .as { padding:5px!important;width:130px!important; }
                 
             }
 
@@ -48,7 +58,7 @@
             <td align="center">
 
                 <!-- body of email starts here -->
-                <table bgcolor="#222D33" width="600" border="0" cellspacing="0" cellpadding="0" class="container">
+                <table bgcolor="#222D33" width="600" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
 
                     <!-- header starts -->
                     <tr>
@@ -56,13 +66,13 @@
                     </tr>
                     <tr>
                         <td align="center" style="background-color:#121212;">
-                            <table width="600" height="80" border="0" cellspacing="0" cellpadding="0">
+                            <table width="600" height="80" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                 <tr>
                                     <td align="left" width="150">
                                         <a href="https://www.wingstop.com/" target="_blank">
-                                            <img src="images/logo_img.jpg" style="width: 100%;" alt="Wingstop">
+                                            <img src="https://i.ibb.co/TKknnkP/logo-img.jpg" style="width: 100%;" alt="Wingstop">
                                         </a>
-                                        <td align="center" width="450" style="color:#fff;font-weight:bold;font-size:1.6rem;">
+                                        <td align="center" class="fc" width="450" style="color:#fff;font-weight:bold;font-size:1.5rem;">
                                             THANK YOU, DAVID
                                         </td>
                                     </td>
@@ -75,11 +85,11 @@
                     <!-- hero image starts -->
                     <tr>
                         <td align="center">
-                            <table width="600" border="0" cellspacing="0" cellpadding="0">
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                 <tr>
                                     <td align="center">
                                         <a href="https://www.wingstop.com/" target="_blank">
-                                        <img src="images/hero_img.jpg" style="width: 100%;" alt="">
+                                        <img src="https://i.ibb.co/vVPQtKB/hero-img.jpg" style="width: 100%;" alt="">
                                         </a>
                                     </td>
                                 </tr>
@@ -94,10 +104,10 @@
                     <!-- delivery image starts -->
                     <tr>
                         <td align="center">
-                            <table width="600" border="0" cellspacing="0" cellpadding="0">
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                 <tr>
                                     <td align="center">
-                                        <img src="images/delivery_ad_img.jpg" style="width: 100%;" alt="">
+                                        <img src="https://i.ibb.co/wLXf9Jq/delivery-ad-img.jpg" style="width: 100%;" class="image" alt="Delivery Time">
                                     </td>
                                 </tr>
                             </table>
@@ -111,11 +121,11 @@
                     <!-- tracking order starts -->
                     <tr>
                         <td align="center">
-                            <table width="600" border="0" cellspacing="0" cellpadding="0">
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                 <tr>
                                     <td align="center">
                                         <a href="https://www.wingstop.com/" target="_blank">
-                                        <img src="images/track_order_img.jpg" style="width: 100%;" alt="">
+                                        <img src="https://i.ibb.co/Twn27Qk/track-order-img.jpg" style="width: 100%;" class="image" alt="Track Order">
                                         </a>
                                     </td>
                                 </tr>
@@ -130,18 +140,18 @@
                     <!-- order/restaurant column starts -->
                     <tr>
                         <td align="center">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #000;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #000;" class="responsive-table">
 
                                 <!-- order information starts -->
                                 <tr>
                                     <td height="5" style="line-height:5px;font-size:5px;font-family:arial;mso-line-height-rule:exactly;">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td align="left">
-                                        <table width="285" border="0" cellspacing="0" cellpadding="0">
+                                    <td align="left" class="db dw">
+                                        <table width="285" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                             <tr>
-                                                <td align="left">
-                                                    <img src="images/order_info_img.jpg" style="width:100%" alt="Order Info">
+                                                <td align="left" style="background-color: #D0CBAB;padding:10px;color:#fff;font-weight:600;">
+                                                    ORDER INFORMATION 
                                                 </td>
                                             </tr>
                                             <tr>
@@ -223,12 +233,14 @@
                                     </td>
 
                                     <!-- restaurant information starts -->
-
-                                    <td align="right">
-                                        <table width="285" border="0" cellspacing="0" cellpadding="0">
+                                    <!-- <tr>
+                                        <td height="5" style="line-height:5px;font-size:5px;font-family:arial;mso-line-height-rule:exactly;">&nbsp;</td>
+                                    </tr> -->
+                                    <td align="right" class="db dw">
+                                        <table width="285" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                             <tr>
-                                                <td align="left">
-                                                    <img src="images/restaurant_info_img.jpg" style="width:100%" alt="Order Info">
+                                                <td align="left" style="background-color: #D0CBAB;padding:10px;color:#fff;font-weight:600;">
+                                                    RESTAURANT INFORMATION 
                                                 </td>
                                             </tr>
                                             <tr>
@@ -302,6 +314,7 @@
                                     </td>
                                     <!-- restaurant information ends -->
                                 </tr>
+
                                 <!-- order information ends -->
                             </table>
                         </td>
@@ -314,10 +327,10 @@
                     </tr>
                     <tr>
                         <td align="center">
-                            <table width="600" border="0" cellspacing="0" cellpadding="0">
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                 <tr>
-                                    <td align="center">
-                                        <img src="images/order_details_img.jpg" style="width:100%"  alt="">
+                                    <td align="left" style="background-color: #D0CBAB;padding:10px;color:#fff;font-weight:600;">
+                                        ORDER DETAILS 
                                     </td>
                                 </tr>
                             </table>
@@ -325,30 +338,16 @@
                     </tr>
                     <!-- order details image ends -->
 
-                    <!-- order delivery image starts -->
-                    <tr>
-                        <td align="center">
-                            <table width="600" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <td align="center">
-                                        <img src="images/order_delivery_img.jpg" style="width:100%"  alt="">
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <!-- order delivery image ends -->
-
                     <!-- payment info section starts -->
                     <tr>
                         <td height="15" style="background-color:#000;line-height:15px;font-size:15px;font-family:arial;mso-line-height-rule:exactly;">&nbsp;</td>
                     </tr>
                     <tr>
                         <td align="center">
-                            <table width="600" cellspacing="0" cellpadding="0" style="background-color:#000;">
+                            <table width="600" cellspacing="0" cellpadding="0" style="background-color:#000;" class="responsive-table">
                                 <tr>
-                                    <td align="center">
-                                        <table width="560" cellspacing="0" cellpadding="0">
+                                    <td align="center" style="padding:5px;">
+                                        <table width="560" cellspacing="0" cellpadding="0" class="responsive-table">
                                             <!-- title order -->
                                             <tr>
                                                 <td align="left" style="color:#fff;font-weight:bold;font-size:1rem;">
@@ -458,10 +457,10 @@
                     <!-- subtotal details starts -->
                     <tr>
                         <td align="center">
-                            <table width="600" cellspacing="0" cellpadding="0" style="background-color:#000;">
+                            <table width="600" cellspacing="0" cellpadding="0" style="background-color:#000;" class="responsive-table">
                                 <tr>
-                                    <td align="center">
-                                        <table width="560" cellspacing="0" cellpadding="0" style="background-color:#000;">
+                                    <td align="center" style="padding:5px;">
+                                        <table width="560" cellspacing="0" cellpadding="0" style="background-color:#000;" class="responsive-table">
                                             <tr>
                                                 <td align="left" style="color:#fff;font-weight:400;font-size:1rem;">
                                                     Subtotal
@@ -539,13 +538,13 @@
                     <!-- total price starts -->
                     <tr>
                         <td align="center">
-                            <table width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#006938">
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#006938" class="responsive-table">
                                 <tr>
                                     <td height="5" style="line-height:5px;font-size:5px;font-family:arial;mso-line-height-rule:exactly;">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td align="center">
-                                        <table width="560" border="0" cellspacing="0" cellpadding="0">
+                                    <td align="center" style="padding:5px;">
+                                        <table width="560" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                             <tr>
                                                 <td align="left" style="color:#fff;font-weight:bold;font-size:1rem;">
                                                     Total
@@ -571,11 +570,11 @@
                     <!-- charity section starts -->
                     <tr>
                         <td align="center">
-                            <table width="600" border="0" cellspacing="0" cellpadding="0">
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                 <tr>
                                     <td align="center">
                                         <a href="https://wingstopcharities.org/" target="_blank">
-                                        <img src="images/charity_img.jpg" style="width:100%;" alt="charity">
+                                        <img src="https://i.ibb.co/7kmLvDg/charity-img.jpg" style="width:100%;" alt="charity">
                                         </a>
                                     </td>
                                 </tr>
@@ -590,11 +589,11 @@
                     <!-- career section starts -->
                     <tr>
                         <td align="center">
-                            <table width="600" border="0" cellspacing="0" cellpadding="0">
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                 <tr>
                                     <td align="center">
                                         <a href="https://www.wingstop.com/careers" target="_blank">
-                                        <img src="images/career_link_img.jpg" style="width:100%;" alt="charity">
+                                        <img src="https://i.ibb.co/HhHbxzY/career-link-img.jpg" style="width:100%;" alt="charity">
                                         </a>
                                     </td>
                                 </tr>
@@ -609,11 +608,11 @@
                     <!-- survey section starts -->
                     <tr>
                         <td align="center">
-                            <table width="600" border="0" cellspacing="0" cellpadding="0">
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                 <tr>
                                     <td align="center">
                                         <a href="https://mywingstopsurvey.com/usa?utm_medium=email&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_content=SEN_CTA_StartSurvey&utm_source=sfmc&utm_source=sfmc&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_id=28839186&sfmc_id=1720255709&AspxAutoDetectCookieSupport=1" target="_blank">
-                                        <img src="images/survey_link_img.jpg" style="width:100%;" alt="charity">
+                                        <img src="https://i.ibb.co/Fbg16Ny/survey-link-img.jpg" style="width:100%;" alt="charity">
                                         </a>
                                     </td>
                                 </tr>
@@ -630,31 +629,31 @@
                         <td align="center">
                             <table  width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#D0CBAB">
                                 <tr>
-                                    <td height="10" style="line-height:10px;font-size:10px;font-family:arial;mso-line-height-rule:exactly;">&nbsp;</td>
+                                    <td height="5" style="line-height:5px;font-size:5px;font-family:arial;mso-line-height-rule:exactly;">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td align="center">
-                                        <table width="560" border="0" cellspacing="0" cellpadding="0">
+                                    <td align="center" class="pd">
+                                        <table width="560" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                             <tr>
-                                                <td align="left" style="color:#fff;font-weight:bold;font-size:2rem;">
+                                                <td align="left" class="fc" style="color:#fff;font-weight:bold;font-size:2rem;">
                                                     KEEP IN TOUCH
                                                 </td>
                                                 <td align="right" style="color:#fff;">
                                                     <a href="https://www.facebook.com/Wingstop/?utm_source=sfmc&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_id=28839186&sfmc_id=1720255709" 
                                                         style="text-decoration:none;" target="_blank">
-                                                        <img src="images/facebook_link_img.jpg" style="width:40px;" alt="Facebook">
+                                                        <img src="https://i.ibb.co/SnJGGkt/facebook-link-img.jpg" style="width:40px;" alt="Facebook">
                                                     </a>
                                                     <a href="https://www.instagram.com/wingstop/?utm_source=sfmc&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_id=28839186&sfmc_id=1720255709" 
                                                         style="text-decoration:none;" target="_blank">
-                                                        <img src="images/instagram_link_img.jpg" style="text-decoration:none;width:40px;" alt="Instagram">
+                                                        <img src="https://i.ibb.co/481hfVq/instagram-link-img.jpg" style="text-decoration:none;width:40px;" alt="Instagram">
                                                     </a>
                                                     <a href="https://twitter.com/wingstop/?utm_source=sfmc&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_id=28839186&sfmc_id=1720255709" 
                                                         style="text-decoration:none;" target="_blank">
-                                                        <img src="images/twitter_link_img.jpg" style="text-decoration:none;width:40px;" alt="Twitter">
+                                                        <img src="https://i.ibb.co/YynCFzB/twitter-link-img.jpg" style="text-decoration:none;width:40px;" alt="Twitter">
                                                     </a>
                                                     <a href="https://www.tiktok.com/@wingstop?utm_source=sfmc&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_id=28839186&sfmc_id=1720255709" 
                                                         style="text-decoration:none;" target="_blank">
-                                                        <img src="images/tiktok_link_img.jpg" style="text-decoration:none;width:40px;" alt="Tiktok">
+                                                        <img src="https://i.ibb.co/frzQwhP/tiktok-link-img.jpg" style="text-decoration:none;width:40px;" alt="Tiktok">
                                                     </a>
                                                 </td>
                                             </tr>
@@ -662,7 +661,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td height="10" style="line-height:10px;font-size:10px;font-family:arial;mso-line-height-rule:exactly;">&nbsp;</td>
+                                    <td height="5" style="line-height:5px;font-size:5px;font-family:arial;mso-line-height-rule:exactly;">&nbsp;</td>
                                 </tr>
                             </table>
                         </td>
@@ -672,11 +671,11 @@
                     <!-- new offer section starts -->
                     <tr>
                         <td align="center">
-                            <table width="600" border="0" cellspacing="0" cellpadding="0">
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                 <tr>
                                     <td align="center">
                                         <a href="https://www.wingstop.com/menu/chicken-sandwich/new-chicken-sandwich?utm_medium=email&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_content=SEP_IMG_SCS&utm_source=sfmc&utm_source=sfmc&utm_id=28839186&sfmc_id=1720255709" target="_blank">
-                                            <img src="images/newoffers_link_img.jpg" style="width:100%;" alt="New Offers">
+                                            <img src="https://i.ibb.co/SdxWz6B/newoffers-link-img.jpg" style="width:100%;" alt="New Offers">
                                         </a>
                                     </td>
                                 </tr>
@@ -690,21 +689,21 @@
                         <td align="center">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#262626">
                                 <tr>
-                                    <td align="center">
-                                        <table width="560" border="0" cellspacing="0" cellpadding="0">
+                                    <td align="center" class="pd">
+                                        <table width="560" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                             <tr>
-                                                <td align="left" width="200" style="padding:20px 0px;line-height:1.5;font-size:1.2rem;font-weight:bold;color:#fff;">
+                                                <td align="left" class="fs" width="200" style="padding:10px 0px;line-height:1.5;font-size:1.2rem;font-weight:bold;color:#fff;">
                                                     DOWNLOAD OUR APP<br> TO CHECK OUT THE<br> WING CALCULATOR
                                                 </td>
                                                 <td align="right" width="360">
                                                     <a href="https://play.google.com/store/apps/details?id=com.mobilaurus.wingstopandroid&hl=en_US&utm_medium=email&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_content=OCT_CTA_GetItOnGooglePlay&utm_source=sfmc&utm_source=sfmc&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_id=28839186&sfmc_id=1720255709"
-                                                            target="_blank" style="text-decoration:none;padding-right:5px;">
-                                                        <img src="images/goggleplay_link_img.jpg" alt="Google Play" width="160">
+                                                        target="_blank" style="text-decoration:none;padding-right:5px;">
+                                                        <img src="https://i.ibb.co/QcKLNHL/goggleplay-link-img.jpg" class="as db" alt="Google Play" width="145">
                                                     </a>
                                                     
                                                     <a href="https://apps.apple.com/us/app/wingstop/id454719277?utm_medium=email&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_content=OCT_CTA_DownloadItOnTheApp&utm_source=sfmc&utm_source=sfmc&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_id=28839186&sfmc_id=1720255709"
-                                                            target="_blank" style="text-decoration:none;padding-left:5px;">
-                                                        <img src="images/appstore_link_img.jpg" alt="Google Play" width="160">
+                                                        target="_blank" style="text-decoration:none;padding-left:5px;">
+                                                        <img src="https://i.ibb.co/5nzsypP/appstore-link-img.jpg" class="as db" alt="Google Play" width="145">
                                                     </a>
                                                 </td>
                                             </tr>
@@ -722,7 +721,7 @@
                             <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#121212">
                                 <tr>
                                     <td align="center">
-                                        <table width="560" border="0" cellspacing="0" cellpadding="0">
+                                        <table width="560" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                             <tr>
                                                 <td style="padding:20px;font-size:0.9rem;font-weight:400;color:#fff;">
                                                     Note: Add <a href="noreply@online.wingstop.com" style="font-weight:bold;color:#39c477;">
@@ -741,16 +740,16 @@
                     <!-- footer section starts -->
                     <tr>
                         <td align="center">
-                            <table width="600" height="auto" border="0" cellspacing="0" cellpadding="0" bgcolor="#000">
+                            <table width="600" height="auto" border="0" cellspacing="0" cellpadding="0" bgcolor="#000" class="responsive-table">
                                 <tr>
                                     <td align="center">
-                                        <table width="500" height="auto" border="0" cellspacing="0" cellpadding="0">
+                                        <table width="500" height="auto" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                             <!-- first footer img starts -->
                                             <tr>
                                                 <td align="center" style="padding:20px;">
                                                     <a href="https://www.wingstop.com/?utm_medium=email&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_content=FTR_TXT_Logo&utm_source=sfmc&utm_source=sfmc&utm_id=28839186&sfmc_id=1720255709"
                                                         target="_blank" style="text-decoration:none;">
-                                                        <img src="images/bottom_detail_link_img.jpg" width="200" alt="Wingstop">
+                                                        <img src="https://i.ibb.co/JBSqmyR/bottom-detail-link-img.jpg" class="image" width="200" alt="Wingstop">
                                                     </a>
                                                 </td>
                                             </tr>
@@ -761,7 +760,7 @@
                                                 <td align="center">
                                                     <a href="https://www.wingstop.com/?utm_medium=email&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_campaign=OrderConfirmation_E_T01_T_T_OR_CON_OPS_Other&utm_content=FTR_TXT_Logo&utm_source=sfmc&utm_source=sfmc&utm_id=28839186&sfmc_id=1720255709"
                                                         target="_blank" style="text-decoration:none;">
-                                                        <img src="images/final_bottom_img.jpg" width="200" alt="Wingstop">
+                                                        <img src="https://i.ibb.co/qjf3qQf/final-bottom-img.jpg" class="image" width="200" alt="Wingstop">
                                                     </a>
                                                 </td>
                                             </tr>
@@ -841,6 +840,7 @@
                         </td>
                     </tr>
                     <!-- footer section ends -->
+
                 </table>
             </td>
         </tr>
